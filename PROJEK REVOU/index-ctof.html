@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Kalkulator Konversi Suhu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kalkulator Konversi Suhu Celcius Ke Fahrenheit</h1>
+
+    <p>
+      Masukkan suhu derajat Celcius (&degC) ke kotak di bawah, lalu klik tombol
+      Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&degF).
+    </p>
+
+    <form>
+      <label for="celcius">Celcius (&degC):</label>
+      <input type="number" id="celcius" required />
+      <div class="button-group">
+        <button type="submit" id="convert">Konversi</button>
+        <button type="reset" id="reset">Reset</button>
+        <button type="button" onclick="reverseElement()">Reverse</button>
+      </div>
+
+      <br />
+      <br />
+
+      <label for="fahrenheit">Fahrenheit (&degF):</label>
+      <input type="number" id="resultFahrenheit" readonly />
+
+      <br />
+      <br />
+      <label for="kalkulasi">Cara Kalkulasi: </label>
+      <input type="text" id="resultKalkulasi" readonly />
+      <!-- kalkulasi dengan rumus 
+      Celcius (&degC) * (9/5) + 32 = Fahrenheit (&degF) -->
+    </form>
+
+    <a href="index-ftoc.html">Konversi Fahrenheit Ke Celcius</a>
+
+    <footer>
+      <p>&copy; LailaPuspita</p>
+    </footer>
+
+    <script src="script-ctof.js"></script>
+  </body>
+</html>
